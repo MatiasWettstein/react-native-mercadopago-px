@@ -34,7 +34,7 @@ def getExtOrPackageJsonDefault(name) {
   def inputFile = new File("$rootDir/../package.json")
   def packageJson = new JsonSlurper().parseText(inputFile.text)
 
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : packageJson['sdkVersions'] ? packageJson['sdkVersions']['android']['mercadopagopx'] : "4.53.2"
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : packageJson['sdkVersions'] ? packageJson['sdkVersions']['android']['mercadopagopx'] : "4.53.1"
 }
 
 android {
